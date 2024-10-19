@@ -1,18 +1,18 @@
 import Card from "./card";
 import { Switch } from "@mantine/core";
 
+import user from "../assets/images/user.png";
 
 interface StepThreeProps {
   setDataEmployee: React.Dispatch<any>;
   dataEmployee: any;
 }
 function StepThree({ setDataEmployee, dataEmployee }: StepThreeProps) {
- 
   const handelActive = (e: boolean) => {
     setDataEmployee({ ...dataEmployee, active: e });
   };
   console.log(dataEmployee);
-  
+
   return (
     <div className="pe-1 mdl:pe-9 flex flex-col gap-3 mdl:gap-5">
       <Card title="Summary">
@@ -23,7 +23,7 @@ function StepThree({ setDataEmployee, dataEmployee }: StepThreeProps) {
             </h3>
             <div className="flex items-center gap-2">
               <img
-               src={URL.createObjectURL(dataEmployee?.image)}
+                src={user}
                 alt={dataEmployee?.name}
                 className="w-8 h-8 rounded-full object-cover object-top"
               />
@@ -57,9 +57,9 @@ function StepThree({ setDataEmployee, dataEmployee }: StepThreeProps) {
               start date
             </h3>
             <h4 className="text-xs mdl:text-base font-medium">
-              {dataEmployee?.startDate}
+            {new Date().toLocaleDateString('en-GB')}
             </h4>
-          </div>
+          </div>{" "}
         </Card>
         <Card title="Active">
           <div className="flex items-center gap-8 mt-7 mb-4">
@@ -68,7 +68,6 @@ function StepThree({ setDataEmployee, dataEmployee }: StepThreeProps) {
             </h3>
             <Switch
               onChange={(e) => {
-               
                 handelActive(e.target.checked);
               }}
               color="green"

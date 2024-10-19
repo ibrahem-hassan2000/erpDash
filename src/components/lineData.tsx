@@ -23,7 +23,7 @@ function LineData({ employee }: LineDataProps) {
 
   return (
     <Link
-      to={`/employee/${employee.id}`}
+      to={`/employees/${employee.id}`}
       className=" border-gray/20 duration-300 hover:shadow-md hover:border-gray/50 shadow-sm border rounded-lg"
     >
       <Card title="">
@@ -34,9 +34,7 @@ function LineData({ employee }: LineDataProps) {
             </h3>
             <div className="flex items-center gap-2">
               <img
-                src={
-                  employee?.image ? URL.createObjectURL(employee.image) : user
-                }
+                src={user}
                 alt={employee?.name}
                 className="w-8 h-8 rounded-full object-cover object-top"
               />

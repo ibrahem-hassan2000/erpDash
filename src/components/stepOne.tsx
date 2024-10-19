@@ -2,25 +2,25 @@ import { Select, TextInput } from "@mantine/core";
 import { DatePickerInput } from "@mantine/dates";
 import { format } from "date-fns";
 interface Employee {
-    id: number;
-    name: string;
-    role: string;
-    email: string;
-    phone: string;
-    startDate: Date;
-    active: boolean;
-    image: File|null;
-  }
-interface StepOnePropd{
-    dataEmployee:Employee,
-    setDataEmployee: React.Dispatch<any>
+  id: number;
+  name: string;
+  role: string;
+  email: string;
+  phone: string;
+  startDate: Date;
+  active: boolean;
+  image: File | null;
+}
+interface StepOnePropd {
+  dataEmployee: Employee;
+  setDataEmployee: React.Dispatch<any>;
 }
 
-function StepOne({dataEmployee,setDataEmployee}:StepOnePropd) {
+function StepOne({ dataEmployee, setDataEmployee }: StepOnePropd) {
   function handleChangeDate(field: string, value: Date | null) {
     if (value) {
-      const formattedDate = format(value, 'dd/MM/yyyy'); // format the date
-      setDataEmployee((prev:any) => ({
+      const formattedDate = format(value, "dd/MM/yyyy"); // format the date
+      setDataEmployee((prev: any) => ({
         ...prev,
         [field]: formattedDate, // store the formatted date
       }));
@@ -28,12 +28,12 @@ function StepOne({dataEmployee,setDataEmployee}:StepOnePropd) {
   }
 
   const handleChange = (field: string, value: any) => {
-    setDataEmployee((prevData:any) => ({
+    setDataEmployee((prevData: any) => ({
       ...prevData,
       [field]: value,
     }));
   };
-console.log(dataEmployee);
+  console.log(dataEmployee);
 
   return (
     <form action="" className="flex flex-col gap-3 w-full">
@@ -57,7 +57,7 @@ console.log(dataEmployee);
         valueFormat="DD/MM/YYYY"
         required
         placeholder="Start Date"
-        value={dataEmployee.startDate ? new Date(dataEmployee.startDate) : null}
+        value={new Date()}
         onChange={(value) => handleChangeDate("startDate", value)}
         classNames={{
           input:

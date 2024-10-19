@@ -23,7 +23,7 @@ function ModalAdd() {
   const [opened, { open, close }] = useDisclosure(false);
   const [active, setActive] = useState(0);
   const [dataEmployee, setDataEmployee] = useState<Employee>({
-    id:  Date.now(),
+    id: Date.now(),
     name: "",
     startDate: new Date(),
     role: "",
@@ -37,7 +37,19 @@ function ModalAdd() {
       .post("http://localhost:3000/employees", dataEmployee)
       .then((res) => {
         console.log(res);
-        close()
+
+        setDataEmployee({
+          id: Date.now(),
+          name: "",
+          startDate: new Date(),
+          role: "",
+          email: "",
+          phone: "",
+          active: false,
+          image: null,
+        });
+        setActive(0);
+        close();
       })
       .catch((error) => {
         console.error("Error sending data:", error);

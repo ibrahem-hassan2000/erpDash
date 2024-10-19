@@ -21,6 +21,7 @@ function DropImg({ dataEmployee, setDataEmployee }: DropImgProps) {
       image: newFile,
     });
   };
+  console.log(dataEmployee?.image);
 
   const handleRemoveFile = () => {
     setDataEmployee({
@@ -36,18 +37,18 @@ function DropImg({ dataEmployee, setDataEmployee }: DropImgProps) {
         <div className="flex gap-5 items-center h-[152px] w-full  relative border border-dashed rounded-lg p-3">
           {dataEmployee.image.path ? (
             <img
-              src={user}
+              src={URL.createObjectURL(dataEmployee.image)}
               alt={`preview of ${dataEmployee.image.name}`}
               className="  w-[170px] h-[128px] object-cover rounded-xl object-top"
             />
           ) : (
             <img
-              src={URL.createObjectURL(dataEmployee.image)}
+              src={user}
               alt={`preview of ${dataEmployee.image.name}`}
               className="  w-[170px] h-[128px] object-cover rounded-xl object-top"
             />
           )}
-         
+
           <div>
             <h3 className=" text-nowrap truncate max-w-[calc(100%-50px)] text-base mdl:text-lg font-normal mb-4">
               {dataEmployee.image.name}

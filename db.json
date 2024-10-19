@@ -1,18 +1,6 @@
 {
   "employees": [
     {
-      "id": "4",
-      "name": "Mohamed Saad 2",
-      "role": "Data Entry",
-      "email": "mohamed.saad@example.com",
-      "phone": "012345678914444",
-      "startDate": "01/01/2023",
-      "active": true,
-      "image": {
-        "path": "1.jpg"
-      }
-    },
-    {
       "id": "5",
       "name": "Sara Mahmoud",
       "role": "Designer",
@@ -84,18 +72,6 @@
     },
     {
       "id": "500",
-      "name": "ffلطفى",
-      "startDate": "2024-09-30T21:00:00.000Z",
-      "role": "Software",
-      "email": "hibrahem266@gmail.com",
-      "phone": "0524524254",
-      "active": false,
-      "image": {
-        "path": "1.jpg"
-      }
-    },
-    {
-      "id": "500",
       "name": "Ibrahem Hassan",
       "startDate": "2020-04-08T22:00:00.000Z",
       "role": "Data Entry",
@@ -116,6 +92,30 @@
       "active": true,
       "image": {
         "path": "1.jpg"
+      }
+    },
+    {
+      "id": 1729357627597,
+      "name": "Ibrahem Hassan",
+      "startDate": "2024-10-19T17:07:07.597Z",
+      "role": "Data Entry",
+      "email": "ibrahim.hassan@profound-group.com",
+      "phone": "01276790349",
+      "active": true,
+      "image": {
+        "path": "ad.2.png"
+      }
+    },
+    {
+      "id": 1729357627597,
+      "name": "Ibrahem Hassan",
+      "startDate": "2024-10-19T17:07:07.597Z",
+      "role": "Data Entry",
+      "email": "ibrahim.hassan@profound-group.com",
+      "phone": "01276790349",
+      "active": true,
+      "image": {
+        "path": "ad.2.png"
       }
     }
   ]
