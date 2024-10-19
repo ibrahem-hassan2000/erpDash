@@ -1,0 +1,122 @@
+{
+  "employees": [
+    {
+      "id": "4",
+      "name": "Mohamed Saad 2",
+      "role": "Data Entry",
+      "email": "mohamed.saad@example.com",
+      "phone": "012345678914444",
+      "startDate": "01/01/2023",
+      "active": true,
+      "image": {
+        "path": "1.jpg"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Sara Mahmoud",
+      "role": "Designer",
+      "email": "sara.mahmoud@example.com",
+      "phone": "01234567892",
+      "startDate": "15/02/2023",
+      "active": true,
+      "image": "/images/sara_mahmoud.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Youssef Ibrahim",
+      "role": "Manager",
+      "email": "youssef.ibrahim@example.com",
+      "phone": "01234567893",
+      "startDate": "10/03/2022",
+      "active": true,
+      "image": "/images/youssef_ibrahim.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Laila Ahmed",
+      "role": "HR",
+      "email": "laila.ahmed@example.com",
+      "phone": "01234567894",
+      "startDate": "20/05/2021",
+      "active": true,
+      "image": "/images/laila_ahmed.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Hassan Mostafa",
+      "role": "Marketing",
+      "email": "hassan.mostafa@example.com",
+      "phone": "01234567895",
+      "startDate": "30/06/2021",
+      "active": true,
+      "image": "/images/hassan_mostafa.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Omar Adel",
+      "role": "Sales",
+      "email": "omar.adel@example.com",
+      "phone": "01234567896",
+      "startDate": "12/07/2022",
+      "active": true,
+      "image": "/images/omar_adel.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Fatma Khaled",
+      "role": "Support",
+      "email": "fatma.khaled@example.com",
+      "phone": "01234567897",
+      "startDate": "05/08/2023",
+      "active": true,
+      "image": "/images/fatma_khaled.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Ali Hassan",
+      "role": "QA Engineer",
+      "email": "ali.hassan@example.com",
+      "phone": "01234567898",
+      "startDate": "18/09/2023",
+      "active": false,
+      "image": "/images/ali_hassan.jpg"
+    },
+    {
+      "id": "500",
+      "name": "ffلطفى",
+      "startDate": "2024-09-30T21:00:00.000Z",
+      "role": "Software",
+      "email": "hibrahem266@gmail.com",
+      "phone": "0524524254",
+      "active": false,
+      "image": {
+        "path": "1.jpg"
+      }
+    },
+    {
+      "id": "500",
+      "name": "Ibrahem Hassan",
+      "startDate": "2020-04-08T22:00:00.000Z",
+      "role": "Data Entry",
+      "email": "hibrahem266@gmail.com",
+      "phone": "01276790349",
+      "active": true,
+      "image": {
+        "path": "profile-pic2.png"
+      }
+    },
+    {
+      "id": "500",
+      "name": "Ibrahem Hassan",
+      "startDate": "11/10/2024",
+      "role": "Data Entry",
+      "email": "hibrahem266@gmail.com",
+      "phone": "01276790349",
+      "active": true,
+      "image": {
+        "path": "1.jpg"
+      }
+    }
+  ]
+}
