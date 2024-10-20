@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import DashboardIcon from "../assets/icons/Dashboard";
 import SettingsIcons from "../assets/icons/Settings";
 import TeamsIcons from "../assets/icons/teams";
@@ -9,6 +9,7 @@ import Logo from "../assets/icons/logo";
 function MenuNav() {
   const location = useLocation();
   console.log(location);
+  const { id } = useParams<{ id: string }>();
 
   const LinksNav = useMemo(
     () => [
@@ -40,11 +41,11 @@ function MenuNav() {
         id: 2,
         name: "Employees",
         url: "/employees",
-        active: location.pathname === "/employees",
+        active: location.pathname === "/employees"||location.pathname===`/employees/${id}`,
         icon: (
           <EmployeesIcon
             className=" w-5 mdl:w-6 h-auto duration-200 "
-            fill={`${location.pathname === "/employees" ? "#026980" : "white"}`}
+            fill={`${location.pathname === "/employees"||location.pathname===`/employees/${id}` ? "#026980" : "white"}`}
           />
         ),
       },

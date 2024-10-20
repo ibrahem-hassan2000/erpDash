@@ -23,7 +23,7 @@ function EmployeeDetails() {
   const [employee, setEmployee] = useState<Employee | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-console.log(employee);
+  console.log(employee);
 
   useEffect(() => {
     const fetchEmployee = async () => {
@@ -67,7 +67,13 @@ console.log(employee);
             {employee?.name}
           </h3>
         </div>
-        {employee ? <ModalEdit id={id} dataEmployee={employee} setDataEmployee={setEmployee}/> : null}
+        {employee ? (
+          <ModalEdit
+            id={id}
+            dataEmployee={employee}
+            setDataEmployee={setEmployee}
+          />
+        ) : null}
       </div>
       <div className="pe-1 mdl:pe-9 flex flex-col gap-3 mdl:gap-5">
         <Card title="Summary">
@@ -115,7 +121,14 @@ console.log(employee);
         </Card>
         <div className="flex flex-col mdl:flex-row gap-3 ">
           <Card title="Date">
-          dfcd
+            <div className="flex items-center gap-8 mt-7 mb-4">
+              <h3 className="text-xs mdl:text-base font-medium text-gray">
+                start date
+              </h3>
+              <h4 className="text-xs mdl:text-base font-medium">
+                {new Date().toLocaleDateString("en-GB")}
+              </h4>
+            </div>{" "}
           </Card>
           <Card title="Active">
             <div className="flex items-center gap-8 mt-7 mb-4">

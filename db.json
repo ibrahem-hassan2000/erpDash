@@ -3,7 +3,7 @@
     {
       "id": "5",
       "name": "Sara Mahmoud",
-      "role": "Designer",
+      "role": "IT",
       "email": "sara.mahmoud@example.com",
       "phone": "01234567892",
       "startDate": "15/02/2023",
@@ -116,6 +116,18 @@
       "active": true,
       "image": {
         "path": "ad.2.png"
+      }
+    },
+    {
+      "id": 1729358524210,
+      "name": "Ibrahem Hassan",
+      "startDate": "10/10/2024",
+      "role": "Data Entry",
+      "email": "ibrahim.hassan@profound-group.com",
+      "phone": "01276790349",
+      "active": true,
+      "image": {
+        "path": "9a3f51e5-4aa9-4fc8-84ac-a45db9c6bdcb.jpg"
       }
     }
   ]
